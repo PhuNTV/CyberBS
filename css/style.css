@@ -1390,3 +1390,88 @@ a.read:hover {
 
 
 /*ABOUT*/
+
+
+/*NUMBER-COUNT*/
+
+.stats {
+    background: var(--primary);
+}
+
+.stats_info p {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.stats_info h4 {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.stats_info span.fa {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.stats_bottom_grid_left img {
+    margin: 0 auto;
+}
+
+.stats_info {
+    text-align: center;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+}
+
+.stats_info:nth-child(3) {
+    border-right: 0px;
+}
+
+.stats_info:nth-child(2) {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+@media (max-width: 992px) {
+    .stats_info p {
+        font-size: 40px !important;
+        line-height: 50px;
+    }
+    .stats_info h4 {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 737px) {
+    .stats_info {
+        padding: 0 5px !important;
+    }
+    .stats_info p {
+        font-size: 35px !important;
+        line-height: 38px;
+        margin-top: 20px;
+    }
+    .stats_info h4 {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 415px) {
+    .stats_info span.fa {
+        font-size: 2em !important;
+    }
+}
+
+
+/*NUMBER-COUNT*/
