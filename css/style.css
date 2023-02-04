@@ -4,16 +4,12 @@
 
 body,
 html {
-    margin: 0;
-    padding: 0;
     font-family: 'Jost', sans-serif;
     background: var(--bg-color);
     color: var(--font-color);
 }
 
 :root {
-    --primary-color: #189A46;
-    --secondary-color: #f53626;
     --font-color: #696969;
     --bg-color: #fff;
     --heading-color: #000c04;
@@ -28,8 +24,8 @@ html {
 }
 
 [data-theme="dark"] {
-    --primary-color: #189A46;
-    --secondary-color: #f53626;
+    --primary: #189A46;
+    --secondary: #f53626;
     --font-color: #afafaf;
     --bg-color: #151515;
     --heading-color: #ddd;
@@ -257,7 +253,7 @@ p.white {
 }
 
 .border-btn:hover {
-    color: var(--primary-color);
+    color: var(--primary);
     background: #fff;
 }
 
@@ -273,7 +269,7 @@ a.link-style {
 a.link-style:before {
     position: absolute;
     content: '';
-    background: var(--primary-color);
+    background: var(--primary);
     width: 0px;
     height: 1px;
     bottom: 13px;
@@ -508,12 +504,12 @@ header {
     font-size: 34px;
     font-weight: 600;
     text-transform: capitalize;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .navbar .navbar-brand span.fa {
     display: inline-block;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .navbar .navbar-brand:hover {
@@ -535,7 +531,7 @@ a.nav-link:before,
 a.dropdown-item:before {
     position: absolute;
     content: '';
-    background: var(--primary-color);
+    background: var(--primary);
     width: 0px;
     height: 1px;
     bottom: 13px;
@@ -553,21 +549,21 @@ a.dropdown-item:hover:before {
 }
 
 .navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .navbar-dark .navbar-nav .show>.nav-link,
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .navbar-light .navbar-nav .show>.nav-link,
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -581,7 +577,7 @@ a.dropdown-item:hover:before {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 a.dropdown-item {
@@ -596,12 +592,12 @@ a.dropdown-item {
 }
 
 a.dropdown-item:hover {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 a.dropdown-item.active {
     background-color: transparent;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -669,19 +665,19 @@ nav ul li a:hover {
 
 .nav-fixed .phone a span {
     opacity: 1;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active .nav-link {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .nav-fixed .navbar-expand-lg .navbar-brand {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .nav-fixed .navbar-expand-lg .navbar-brand span {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .dropdown-item:hover,
@@ -797,7 +793,7 @@ nav ul li a:hover {
         width: 34px;
         height: 34px;
         display: inline-block;
-        background: var(--primary-color);
+        background: var(--primary);
         border-radius: 4px;
         text-align: center;
     }
@@ -805,7 +801,7 @@ nav ul li a:hover {
         line-height: 1.2em;
         color: #fff;
         line-height: 34px;
-        background-color: var(--primary-color);
+        background-color: var(--primary);
         border-radius: 5px;
     }
     .navbar-toggler {
@@ -891,7 +887,7 @@ nav ul li a:hover {
 }
 
 .main-slider .banner-info-bg span.fa {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .main-slider ul.banner-ul span.fa {
@@ -1121,7 +1117,7 @@ button.owl-next {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: var(--primary-color);
+    background: var(--primary);
     width: 30px;
     height: 10px;
 }
@@ -1139,3 +1135,32 @@ button.owl-next {
 
 
 /*CAROUSEL*/
+
+
+/*ABOUT*/
+
+.about .about-container.align-items-center {
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+a.read {
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid var(--primary);
+    color: var(--heading-color);
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+a.read:hover {
+    color: var(--primary);
+}
+
+
+/*ABOUT*/
