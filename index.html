@@ -178,7 +178,30 @@
 
     <section class="feature"></section>
     <section class="service"></section>
-    <section class="number"></section>
+
+    <section class="stats py-5" id="stats">
+        <div class="container py-lg-0 py-3">
+            <div class="row stats-con pb-lg-3">
+                <div class="col-lg-3 col-6 stats_info counter_grid">
+                    <p class="counter">730</p>
+                    <h4>Happy Clients</h4>
+                </div>
+                <div class="col-lg-3 col-6 stats_info">
+                    <p class="counter">80</p>
+                    <h4>Professionals</h4>
+                </div>
+                <div class="col-lg-3 col-6 stats_info mt-lg-0 mt-5">
+                    <p class="counter">812</p>
+                    <h4>Adopted Pets</h4>
+                </div>
+                <div class="col-lg-3 col-6 stats_info mt-lg-0 mt-5">
+                    <p class="counter">90</p>
+                    <h4>Awards</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="plan"></section>
     <section class="video-popup"></section>
     <section class="testimonials"></section>
@@ -189,10 +212,7 @@
 
     <!-- THEME CHANGE -->
     <script src="./js/theme-change.js"></script>
-
     <script src="./js/owl.carousel.js"></script>
-
-    <script src="./js/bootstrap.min.js"></script>
 
     <!-- script for banner slider-->
     <script>
@@ -255,6 +275,16 @@
         })
     </script>
     <!-- //script for tesimonials carousel slider -->
+
+    <!-- stats number counter-->
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- //stats number counter -->
+
+    <script src="./js/bootstrap.min.js"></script>
 
 </body>
 
