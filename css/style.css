@@ -1392,6 +1392,97 @@ a.read:hover {
 /*ABOUT*/
 
 
+/*SERVICES*/
+
+.services .cwp-text {
+    align-self: center;
+}
+
+.services .cwp-text h4,
+.services .fea-gd-vv h5 {
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+.services .cwp-text p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24.5px;
+    color: var(--para-color);
+    margin: 15px 0 35px 0;
+}
+
+.services ul.list-checked li {
+    display: block;
+}
+
+.services ul.list-checked li span.fa {
+    color: var(--primary);
+    margin-right: 12px;
+    background: var(--bg-light);
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.services .cwp-text ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--heading-color);
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+@media all and (max-width: 991px) {
+    .services .cwp-image img {
+        width: 100%;
+    }
+    .services .cwp-text h4,
+    .services .fea-gd-vv h5 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .services .cwp-text h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .services .cwp-text h4,
+    .services .fea-gd-vv h5 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+@media all and (max-width: 387px) {
+    .services .cwp-text h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .services .cwp-text h4 {
+        font-size: 23px;
+        line-height: 28px;
+    }
+    .services #content-with-photo-block {
+        padding: 0 0 2.5rem 0;
+    }
+}
+
+
+/*SERVICES*/
+
+
 /*NUMBER-COUNT*/
 
 .stats {
