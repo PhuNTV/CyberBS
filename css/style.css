@@ -95,8 +95,6 @@ ul {
 }
 
 body img {
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
     border-radius: 10px;
 }
 
@@ -224,7 +222,7 @@ p.white {
     transition: 0.3s ease-in;
     border-radius: var(--border-radius);
     background-color: #fff;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .border-btn:hover {
@@ -451,12 +449,6 @@ button.navbar-toggler.collapsed .icon-close {
 
 button.navbar-toggler.collapsed .icon-expand {
     display: block;
-}
-
-.phone a {
-    font-size: 18px;
-    color: var(--text-color);
-    font-weight: 500;
 }
 
 header {
@@ -885,8 +877,6 @@ nav ul li a:hover {
 
 .main-slider .slider-info a img {
     transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
-    -ms-transition: 0.3s ease-in;
 }
 
 .main-slider .companies20-content {
@@ -1378,8 +1368,7 @@ a.read:hover {
     align-self: center;
 }
 
-.services .cwp-text h4,
-.services .fea-gd-vv h5 {
+.services .cwp-text h4 {
     font-size: 26px;
     line-height: 32px;
     color: var(--heading-color);
@@ -1490,12 +1479,8 @@ a.read:hover {
 
 .stats_info span.fa {
     font-size: 2.5em;
-    color: var(--primary-color);
+    color: var(--primary);
     margin: 0;
-}
-
-.stats_bottom_grid_left img {
-    margin: 0 auto;
 }
 
 .stats_info {
