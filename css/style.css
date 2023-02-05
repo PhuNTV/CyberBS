@@ -74,7 +74,6 @@ input,
 select,
 label,
 li {
-    -webkit-appearance: none;
     outline: none;
     font-family: 'Jost', sans-serif;
 }
@@ -96,11 +95,9 @@ ul {
 }
 
 body img {
-    border-radius: 10px;
-    -weebkit-border-radius: 10px;
     -o-border-radius: 10px;
-    -moz-border-radius: 10px;
     -ms-border-radius: 10px;
+    border-radius: 10px;
 }
 
 h1,
@@ -201,30 +198,6 @@ p.white {
 
 
 /*CONTAINER*/
-
-
-/*PLAY ICON ANIMATION*/
-
-@-webkit-keyframes ripple {
-    0% {
-        box-shadow: 0 0 0 0 rgba(15, 162, 67, 0.25), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
-    }
-    100% {
-        box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
-    }
-}
-
-@keyframes ripple {
-    0% {
-        box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
-    }
-    100% {
-        box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
-    }
-}
-
-
-/*PLAY ICON ANIMATION*/
 
 .btn-style {
     padding: 12px 35px;
@@ -742,7 +715,6 @@ nav ul li a:hover {
         font-size: 22px !important;
     }
     .navbar-nav {
-        -webkit-animation-name: none;
         animation-name: none;
         float: left;
         text-align: center;
@@ -753,7 +725,6 @@ nav ul li a:hover {
         border: 0;
     }
     .navbar-expand-lg .navbar-nav .nav-item {
-        -webkit-animation-name: none;
         animation-name: none;
         padding: 0;
     }
@@ -914,9 +885,7 @@ nav ul li a:hover {
 
 .main-slider .slider-info a img {
     transition: 0.3s ease-in;
-    -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
-    -moz-transition: 0.3s ease-in;
     -ms-transition: 0.3s ease-in;
 }
 
@@ -1026,7 +995,6 @@ nav ul li a:hover {
 
 .owl-carousel,
 .owl-carousel .owl-item {
-    -webkit-tap-highlight-color: transparent;
     position: relative;
 }
 
@@ -1038,7 +1006,6 @@ nav ul li a:hover {
 .owl-carousel .owl-stage {
     position: relative;
     touch-action: manipulation;
-    -moz-backface-visibility: hidden;
 }
 
 .owl-carousel .owl-stage:after {
@@ -1053,20 +1020,11 @@ nav ul li a:hover {
 .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-}
-
-.owl-carousel .owl-item,
-.owl-carousel .owl-wrapper {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .owl-carousel .owl-item {
     min-height: 1px;
     float: left;
-    -webkit-backface-visibility: hidden;
-    -webkit-touch-callout: none;
 }
 
 .owl-carousel .owl-dots.disabled {
@@ -1086,10 +1044,6 @@ nav ul li a:hover {
 .owl-carousel .owl-nav .owl-next,
 .owl-carousel .owl-nav .owl-prev {
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -1113,15 +1067,10 @@ nav ul li a:hover {
 
 .owl-carousel.owl-drag .owl-item {
     touch-action: pan-y;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .owl-carousel.owl-grab {
     cursor: move;
-    cursor: -webkit-grab;
     cursor: grab;
 }
 
@@ -1134,9 +1083,7 @@ nav ul li a:hover {
 }
 
 .owl-carousel .animated {
-    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
@@ -1149,17 +1096,7 @@ nav ul li a:hover {
 }
 
 .owl-carousel .fadeOut {
-    -webkit-animation-name: fadeOut;
     animation-name: fadeOut;
-}
-
-@-webkit-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 @keyframes fadeOut {
@@ -1206,7 +1143,6 @@ nav ul li a:hover {
     background: url(owl.video.play.png) no-repeat;
     cursor: pointer;
     z-index: 1;
-    -webkit-backface-visibility: hidden;
     transition: transform .1s ease;
 }
 
@@ -1251,7 +1187,6 @@ nav ul li a:hover {
 .owl-theme .owl-dots,
 .owl-theme .owl-nav {
     text-align: center;
-    -webkit-tap-highlight-color: transparent;
     display: block;
 }
 
@@ -1320,7 +1255,6 @@ nav ul li a:hover {
     margin: 5px 2px;
     background: #fff;
     display: block;
-    -webkit-backface-visibility: visible;
     transition: opacity .2s ease;
     border-radius: 25px;
     position: relative;
