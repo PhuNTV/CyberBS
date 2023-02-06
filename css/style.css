@@ -40,11 +40,6 @@ html {
     --widget-bg: #131617;
 }
 
-.noscroll {
-    overflow: hidden;
-    height: 100vh;
-}
-
 body a,
 button,
 .btn {
@@ -124,17 +119,8 @@ li {
     list-style-type: none;
 }
 
-p.white {
-    color: #eee;
-}
-
 .align-center {
     align-self: center;
-}
-
-.noscroll {
-    min-height: 100vh;
-    overflow: hidden;
 }
 
 .radius-image {
@@ -1192,30 +1178,6 @@ nav ul li a:hover {
     bottom: 30px;
 }
 
-.owl-theme .owl-nav [class*=owl-] {
-    color: #fff;
-    font-size: 32px;
-    margin: 0px;
-    width: 82px;
-    background: rgba(255, 255, 255, 0.21);
-    display: inline-block;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    height: 82px;
-    line-height: 15px;
-    border-radius: 8px;
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-    background: #fff;
-    opacity: 1;
-    color: #007bff;
-    text-decoration: none;
-    outline: none;
-    box-shadow: none;
-    transition: 0.3s ease-in-out;
-}
-
 .owl-theme .owl-nav [class*=owl-]:focus,
 .owl-theme:focus,
 .owl-dots:focus,
@@ -1241,8 +1203,8 @@ nav ul li a:hover {
 
 .owl-theme .owl-dots .owl-dot span {
     width: 10px;
-    height: 10px;
-    margin: 5px 2px;
+    height: 10.5px;
+    margin: 5px 7px;
     background: #fff;
     display: block;
     transition: opacity .2s ease;
