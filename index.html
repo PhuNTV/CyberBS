@@ -295,7 +295,7 @@
     <section class="plan py-5   ">
             <div class="plan__title text-center ">
                 <h4 class="sub-title ">Our Plans</h4>
-                <p class="hny-title mb-5 ">Affordable Packages</p>
+                <h3 class="hny-title mb-5 ">Affordable Packages</h3>
             </div>
             <div class="pricing">
                 <div class="pricing__item">
@@ -444,15 +444,118 @@
  </div>
           
     </section>
+    
     <section class="testimonials">
         <div class="container">
             <div class="testimonials__content">
                 <h6 class="sub-title text-center" >TESTIMONIALS</h6>
                 <h3 class="hny-title text-center"> Happy Clients & Feedbacks </h3>
             </div>
+
+        <div id="slider">
+                <div class="slide">
+                  <div class="col col-left">
+                    <blockquote>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolor sit amet!.</q>
+                    </blockquote>
+                    <div class="testi-des">
+                        <div class="test-img"><img src="./images/f1.jpg" class="img-fluid" alt="client-img">
+                        </div>
+                        <div class="people align-self">
+                            <h3>John wilson</h3>
+                            <p class="indentity">Example City</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col col-right">
+                    <blockquote>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolor sit amet!.</q>
+                    </blockquote>
+                    <div class="testi-des">
+                        <div class="test-img"><img src="./images/f2.jpg" class="img-fluid" alt="client-img">
+                        </div>
+                        <div class="people align-self">
+                            <h3>Julia sakura</h3>
+                            <p class="indentity">Example City</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="col col-left">
+                    <blockquote>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolor sit amet!.</q>
+                    </blockquote>
+                    <div class="testi-des">
+                        <div class="test-img"><img src="./images/f3.jpg" class="img-fluid" alt="client-img">
+                        </div>
+                        <div class="people align-self">
+                            <h3>Roy linderson</h3>
+                            <p class="indentity">Example City</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col col-right">
+                    <blockquote>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolor sit amet!.</q>
+                    </blockquote>
+                    <div class="testi-des">
+                        <div class="test-img"><img src="./images/f4.jpg" class="img-fluid" alt="client-img">
+                        </div>
+                        <div class="peopl align-self">
+                            <h3>My thyson</h3>
+                            <p class="indentity">Example City</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="col col-left">
+                    <blockquote>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolor sit amet!.</q>
+                    </blockquote>
+                    <div class="testi-des">
+                        <div class="test-img"><img src="./images/f2.jpg" class="img-fluid" alt="client-img">
+                        </div>
+                        <div class="peopl align-self">
+                            <h3>Laura gill</h3>
+                            <p class="indentity">Example City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-right">
+                    <blockquote>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolor sit amet!.</q>
+                    </blockquote>
+                    <div class="testi-des">
+                        <div class="test-img"><img src="./images/f3.jpg" class="img-fluid" alt="client-img">
+                        </div>
+                        <div class="peopl align-self">
+                            <h3>Smith johnson</h3>
+                            <p class="indentity">Example City</p>
+                        </div>
+                    </div>
+                
+                  </div>
+                </div>
             
               
-        </div>
+                 </div>
+
+       
+        
     </section>
 
     <section class="update py-5">
@@ -549,6 +652,14 @@
     
   </footer>
 
+  <!-- Backtotop -->
+  <button id="myBtn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  
+
+
     <!-- JQUERY -->
     <script src="./js/jquery-3.6.3.min.js"></script>
 
@@ -596,6 +707,42 @@ closeBtn.addEventListener('click', function() {
   iframe.style.width = '100%';
   iframe.style.height = '0';
 });
+
+</script>
+
+<!-- Slider  -->
+<script>
+    var slides = document.querySelectorAll('.slide');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide, 3000);
+  
+    function nextSlide() {
+      slides[currentSlide].classList.remove('show');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('show');
+    }
+  </script>
+
+<!-- BACKTOTOP -->
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+document.getElementById("myBtn").addEventListener("click", topFunction);
 
 </script>
 
