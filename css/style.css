@@ -104,6 +104,7 @@ h6 {
     color: var(--heading-color);
     font-family: 'Jost', sans-serif;
     font-weight: 600;
+    
 }
 
 p {
@@ -1493,3 +1494,201 @@ a.read:hover {
 
 
 /*NUMBER-COUNT*/
+
+
+
+
+/* Plan  */
+/* .plan{
+    background: #f9f7fe;
+} */
+.pricing{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.pricing__item{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: white;
+    padding: 3rem 2rem;
+}
+.pricing__item h6 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+
+.pricing__top h4 label  {
+    font-size: 25px;
+    vertical-align: text-top;
+    color: #189A46;
+}
+.pricing__bottom{
+    padding-top: 1rem;
+}
+.pricing__bottom li{
+list-style: none;
+    margin-bottom: 5px;
+    color: #304659;
+}
+.buy-button{
+    margin-top:2rem ;
+}
+
+.pricing__item:hover{
+border: 1px solid #189A46;
+transform: translateY(-20px);
+z-index: 1;
+}
+
+/* .pricing__item:hover .pricing__top h6 h4{
+    
+} */
+
+
+/* Video-popup */
+
+.videohistory__img {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.play-btn{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.play-btn:hover {
+    cursor: pointer;
+    
+    /* position: relative; */
+ /* z-index: 1; */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    filter: brightness(120%);
+}
+
+ 
+
+.vimeo-player{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   display: none;
+
+
+}
+.video:focus{
+    outline: none;
+} 
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 30px;
+    cursor: pointer;
+}
+.videohistory__video {
+    display: none;
+  }
+  
+
+
+  /* testimonials  */
+  
+
+
+  /* Update */
+.subscribe-wthree-field {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-control{
+    width: 70%;
+    font-size: 16px;
+    color: var(--title-color);
+    border-radius: var(--border-radius);
+    padding: 0px 20px;
+    flex-basis: 70%;
+    background: #fff;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+   
+
+.update .btn{
+    width: 28%;
+  
+}
+
+
+/* footer  */
+footer {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 70px 150px;
+  }
+  
+  .footer__copy {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+ footer a {
+    color: #696969;
+    text-decoration: none;
+    
+  }
+  footer a:hover{
+    color: white;
+  }
+  
+
+  .footer_item {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .footer_item h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer__left h3{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer__left p{
+    margin-bottom: 10px;
+  }
+  .footer_item li{
+    margin-bottom: 10px;
+  }
+  .footer__left a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  
