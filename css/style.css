@@ -1610,72 +1610,142 @@ a.read:hover {
 }
 
 
-/* testimonials  */
+/* TESTIMONISLS */
 
-#slider {
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
+.owl-two.owl-carousel.owl-theme .owl-dots {
+    position: inherit;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    margin-top: 80px;
+}
+
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #d8d8d8;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 25px;
     position: relative;
 }
 
-.slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot.active span,
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--primary);
+    width: 30px;
+    height: 10px;
 }
 
-.col {
-    width: 50%;
-    float: left;
-    padding: 20px;
+.testimonials {
+    background: var(--bg-light);
 }
 
-.col-left,
-.col-right {
-    border-radius: 10px;
-    background-color: #fff;
-    padding: 55px;
-    margin: 20px 0;
+.testimonials .testimonial {
+    position: relative;
+    overflow: hidden;
+    text-align: left;
 }
 
-.show {
+.testimonials .testimonial-width {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.testimonials .testimonial {
     display: block;
+    margin: 0;
+    padding: 40px 30px;
+    position: relative;
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
 }
 
-.testi-des {
+.testimonials .testi-des {
     display: flex;
-    align-items: center;
+    text-align: center;
 }
 
-.test-img {
-    margin-right: 10px;
+.testimonials .testimonial blockquote q {
+    font-size: 1.2em;
+    line-height: 28px;
+    color: var(--para-color);
 }
 
-.test-img img {
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    object-fit: cover;
-}
-
-blockquote:before {
+.testimonials .testimonial blockquote q::before {
     font-size: 50px;
-    color: var(--primary-color);
+    color: var(--primary);
     line-height: .8;
     padding-top: 8px;
     font-weight: 600;
     display: inline-block;
     font-family: "Merriweather", serif;
-    content: "\201C";
-    color: green;
+}
+
+.testimonials .test-img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    background: var(--bg-color);
+    border-radius: 50%;
+}
+
+.testimonials .testimonial img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonials .testimonial blockquote {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.testimonials .testimonial .peopl {
+    margin: 0;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.testimonials .testimonial .peopl h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.testimonials p.indentity {
+    color: #777;
+    font-size: 17px;
+    font-style: normal;
+    margin-bottom: 0;
+    text-align: left;
+    opacity: 0.8;
+}
+
+@media (max-width: 667px) {
+    .owl-two.owl-carousel.owl-theme .owl-dots {
+        position: inherit;
+        left: 0px;
+        right: 0px;
+        bottom: 30px;
+        margin-top: 80px;
+        display: none;
+    }
 }
 
 
-/* Update */
+/* /TESTIMONISLS */
+
+
+/* UPDATE */
 
 .subscribe-wthree-field {
     display: flex;
@@ -1701,7 +1771,10 @@ blockquote:before {
 }
 
 
-/* footer  */
+/* /UPDATE */
+
+
+/* FOOTER  */
 
 footer {
     background-color: #000;
@@ -1759,7 +1832,10 @@ footer a:hover {
 }
 
 
-/* backtotop */
+/* /FOOTER  */
+
+
+/* BACKTOTOP */
 
 #myBtn {
     display: none;
@@ -1778,8 +1854,11 @@ footer a:hover {
     background-color: #189A46;
 }
 
-#myBtn i {
+#myBtn {
     font-size: 18px;
     color: white;
     text-align: center;
 }
+
+
+/* /BACKTOTOP */
